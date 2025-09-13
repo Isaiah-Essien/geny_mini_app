@@ -1,5 +1,9 @@
 
 //The Entry point of my Mini Application. 
+import 'package:dio/dio.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
 void main() {
   final dio = Dio(BaseOptions(connectTimeout: const Duration(seconds: 2)));
   dio.interceptors.add(LocalAssetMockInterceptor());
