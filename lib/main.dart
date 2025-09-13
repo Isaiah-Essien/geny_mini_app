@@ -2,6 +2,11 @@
 //The Entry point of my Mini Application. 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:geny/core/repository/business_repository.dart';
+import 'package:geny/core/services/local_cache.dart';
+import 'package:geny/core/services/mock_interceptor.dart';
+import 'package:geny/providers/business_provider.dart';
+import 'package:geny/screens/home_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {
